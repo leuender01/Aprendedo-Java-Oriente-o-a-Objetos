@@ -7,6 +7,20 @@ public class Usuario {
     private String cpf;
     private int    idade;
 
+    public Usuario(){
+        this.idade = 0;
+        this.cpf = "00000000000";
+        this.email = "anonymus@gmail.com";
+    }
+
+    public Usuario(String firstName, String secondName, int idade){
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.idade = idade;
+        this.cpf = "00000000000";
+        this.email = "anonymus@gmail.com";
+    }
+
     public void setFirstName(String name){
         this.firstName = name; 
     }
