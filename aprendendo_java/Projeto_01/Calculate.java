@@ -25,7 +25,7 @@ public class Calculate {
             }catch (Exception e){
                 System.out.println("Digite um numero Valido! ");
                 continue;
-            }
+           }
         }
     }
     static int calculate(int operation) throws Exception
