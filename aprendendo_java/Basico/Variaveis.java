@@ -8,13 +8,20 @@ public class Variaveis{
         //variaveis -> tipo: Numeros (Int)
         //variaveis -> tipo: Nuemros Francionados (Double)
         //variaveis -> tipo: booleanos (boolean)
-        String nome = "Leu do rodo";
+        
+        //tipos primitivos
         int idade2 = 30;
         double altura = 1.75;
         boolean ativo = true;
-        System.out.println(nome);
-        System.out.println(idade2);
-        System.out.println(altura);
-        System.out.println(ativo);
+        char letra = 'a';
+        byte Byte = 2;
+        short numeroPequeno = -12;
+        float flow = 2.9f;
+        double floatGrande = 123.23112;
+
+        //tipos nao primitivos
+        String frase = "Eu sou batman";
+        Integer numero = 323;
+        Boolean testeBolaean = true;
     }
 }
