@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.Objects;
+
 public class Usuario {
     private String firstName;
     private String secondName;
@@ -70,6 +72,19 @@ public class Usuario {
     }
     public String getFullName(){
         return firstName + " " + secondName;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(firstName, secondName);
+    } 
+
+    @Override
+    public boolean equals(Object o){
+        if(this == o) return true;
+        if(o == null || getClass() != o.getClass()) return false;
+        Usuario user = (Usuario) o;
+        return Objects.equals(firstName, user.firstName) && Objects.equals(secondName, user.secondName);
     }
 
     public void getInfo(){
