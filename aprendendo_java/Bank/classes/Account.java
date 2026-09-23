@@ -8,17 +8,21 @@ public class Account{
     private static final int MAX_SIZE = 12;
 
     private String agencia;
-    private String cc;
+    private int cc;
     private String name;
     private double balance = 0;
 
     Log logger = new Log();
     StatmentAccount statmentAccount = new StatmentAccount();
     
-    public Account(String ag, String cc, String name){
+    public Account(String ag, int cc, String name){
         this.agencia = ag;
         this.cc = cc;
         setName(name);
+    }
+    public boolean getName(String name){
+        if(name.equals(this.name)) return true;
+        return false;
     }
 
     public boolean withDrawn(double value){
