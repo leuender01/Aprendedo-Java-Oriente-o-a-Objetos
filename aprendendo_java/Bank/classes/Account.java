@@ -1,9 +1,5 @@
 package classes;
 
-//import java.util.List;
-
-//import java.util.ArrayList;
-
 public class Account{
     private static final int MAX_SIZE = 12;
 
@@ -21,8 +17,9 @@ public class Account{
         setName(name);
     }
     public boolean getName(String name){
-        if(name.equals(this.name)) return true;
-        return false;
+        String nameAccoutString = this.name.toLowerCase();
+        String nameSearch = name.toLowerCase();
+        return nameAccoutString.equals(nameSearch);
     }
 
     public boolean withDrawn(double value){
@@ -55,6 +52,11 @@ public class Account{
             this.name = name;
         } 
     }
+    
+    public double getValue(){
+        return this.balance;
+    }
+
     @Override
     public String toString(){
         return "Conta: " + cc + "\n\rAgencia: " + agencia + "\n\rName: " + name;
