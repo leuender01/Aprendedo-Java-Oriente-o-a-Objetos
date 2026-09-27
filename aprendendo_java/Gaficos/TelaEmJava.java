@@ -1,17 +1,18 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Color;
+import java.awt.Font;
 
 
 public class TelaEmJava{
     public static void main(String[] args) {
-        JLabel texto = new JLabel("Ola mundo?", JLabel.CENTER);
+        JLabel texto = new JLabel("Ola mundo?", Font.BOLD, JLabel.CENTER);
         JFrame janela = new JFrame("Minha primeria janela");
-        janela.setSize(280, 200);
+        janela.setSize(500, 400);
         janela.setLocationRelativeTo(null);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.add(texto);
-        janela.getContentPane().setBackground(Color.BLACK);
+        janela.setBackground(Color.BLACK);
         janela.setVisible(true);
     }
 }
