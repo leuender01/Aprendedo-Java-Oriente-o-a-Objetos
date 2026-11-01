@@ -2,3 +2,8 @@ src/
 .env
 *.class
 ValidarPedidos/
+SistemaBancario/
+ApiFilaDeTarefas
+EstruturasDeDados
+CLAUDE.*
+*claude*
